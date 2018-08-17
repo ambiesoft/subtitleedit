@@ -144,13 +144,41 @@ namespace Nikse.SubtitleEdit.Core.SubtitleFormats
             }
         }
 
+        private static int parseMilliseconds(string millisec)
+        {
+            // Baseunit is 1000, so millisec must be between 0 and 999.
+            if (string.IsNullOrEmpty(millisec))
+                return 0;
+
+            int maxdigit = int.MaxValue.ToString().Length - 1;
+            if (millisec.Length > maxdigit)
+                millisec = millisec.Substring(0, maxdigit);
+
+            int intparse = int.Parse(millisec);
+            if (intparse == 0)
+                return 0;
+
+            int iii = FramesToMillisecondsMax999(intparse);
+
+            int digitlen = millisec.Length;
+
+            double d = intparse;
+            d = d / (Math.Pow(10, digitlen));
+            d = d - (int)d;
+            d = d + 0.0005;
+            d = d * 1000;
+
+            return (int)d;
+        }
+
         public static TimeCode DecodeTimeCode(string[] encodedTimeCode, int index)
         {
             // Hours, Minutes, Seconds, Milliseconds / 10.
             return new TimeCode(int.Parse(encodedTimeCode[index]),
                 int.Parse(encodedTimeCode[index + 1]),
                 int.Parse(encodedTimeCode[index + 2]),
-                int.Parse(encodedTimeCode[index + 3]) * 10);
+                parseMilliseconds(encodedTimeCode[index + 3]));
+                // int.Parse(encodedTimeCode[index + 3]) * 10);
         }
     }
 }

@@ -1744,6 +1744,9 @@ namespace Nikse.SubtitleEdit.Core
                 case "GetDictionaries/DescriptionLine2":
                     language.GetDictionaries.DescriptionLine2 = reader.Value;
                     break;
+                case "GetDictionaries/GetDictionariesHere":
+                    language.GetDictionaries.GetDictionariesHere = reader.Value;
+                    break;
                 case "GetDictionaries/ChooseLanguageAndClickDownload":
                     language.GetDictionaries.ChooseLanguageAndClickDownload = reader.Value;
                     break;
@@ -2677,6 +2680,9 @@ namespace Nikse.SubtitleEdit.Core
                 case "Main/InvalidLanguageNameX":
                     language.Main.InvalidLanguageNameX = reader.Value;
                     break;
+                case "Main/UnableToChangeLanguage":
+                    language.Main.UnableToChangeLanguage = reader.Value;
+                    break;
                 case "Main/DoNotDisplayMessageAgain":
                     language.Main.DoNotDisplayMessageAgain = reader.Value;
                     break;
@@ -2806,6 +2812,9 @@ namespace Nikse.SubtitleEdit.Core
                 case "Main/DropOnlyOneFile":
                     language.Main.DropOnlyOneFile = reader.Value;
                     break;
+                case "Main/BeforeCreateAdjustLines":
+                    language.Main.BeforeCreateAdjustLines = reader.Value;
+                    break;
                 case "Main/OpenAnsiSubtitle":
                     language.Main.OpenAnsiSubtitle = reader.Value;
                     break;
@@ -2884,6 +2893,9 @@ namespace Nikse.SubtitleEdit.Core
                 case "Main/ShowSelectionAndForwardXSecondsLinesLater":
                     language.Main.ShowSelectionAndForwardXSecondsLinesLater = reader.Value;
                     break;
+                case "Main/ShowSelectedLinesEarlierLaterPerformed":
+                    language.Main.ShowSelectedLinesEarlierLaterPerformed = reader.Value;
+                    break;
                 case "Main/DoubleWordsViaRegEx":
                     language.Main.DoubleWordsViaRegEx = reader.Value;
                     break;
@@ -2934,6 +2946,9 @@ namespace Nikse.SubtitleEdit.Core
                     break;
                 case "Main/UnicodeMusicSymbolsAnsiWarning":
                     language.Main.UnicodeMusicSymbolsAnsiWarning = reader.Value;
+                    break;
+                case "Main/UnicodeCharactersAnsiWarning":
+                    language.Main.UnicodeCharactersAnsiWarning = reader.Value;
                     break;
                 case "Main/NegativeTimeWarning":
                     language.Main.NegativeTimeWarning = reader.Value;
@@ -3027,6 +3042,18 @@ namespace Nikse.SubtitleEdit.Core
                     break;
                 case "Main/XStartedSessionYAtZ":
                     language.Main.XStartedSessionYAtZ = reader.Value;
+                    break;
+                case "Main/SpellChekingViaWordXLineYOfX":
+                    language.Main.SpellChekingViaWordXLineYOfX = reader.Value;
+                    break;
+                case "Main/UnableToStartWord":
+                    language.Main.UnableToStartWord = reader.Value;
+                    break;
+                case "Main/SpellCheckAbortedXCorrections":
+                    language.Main.SpellCheckAbortedXCorrections = reader.Value;
+                    break;
+                case "Main/SpellCheckCompletedXCorrections":
+                    language.Main.SpellCheckCompletedXCorrections = reader.Value;
                     break;
                 case "Main/OpenOtherSubtitle":
                     language.Main.OpenOtherSubtitle = reader.Value;

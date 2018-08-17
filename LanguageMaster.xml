@@ -661,6 +661,7 @@ Note: Do check free disk space.</WaveFileMalformed>
     <Title>Need dictionaries?</Title>
     <DescriptionLine1>Subtitle Edit's spell check is based on the NHunspell engine which</DescriptionLine1>
     <DescriptionLine2>uses the spell checking dictionaries from Open Office.</DescriptionLine2>
+    <GetDictionariesHere>Get dictionaries here:</GetDictionariesHere>
     <ChooseLanguageAndClickDownload>Choose your language and click download</ChooseLanguageAndClickDownload>
     <OpenDictionariesFolder>Open 'Dictionaries' folder</OpenDictionariesFolder>
     <Download>Download</Download>
@@ -1311,6 +1312,7 @@ Continue?</SubtitleAppendPrompt>
     <RedoPerformed>Redo performed</RedoPerformed>
     <NothingToUndo>Nothing to undo</NothingToUndo>
     <InvalidLanguageNameX>Invalid language name: {0}</InvalidLanguageNameX>
+    <UnableToChangeLanguage>Unable to change language!</UnableToChangeLanguage>
     <DoNotDisplayMessageAgain>Don't display this message again</DoNotDisplayMessageAgain>
     <NumberOfCorrectedWords>Number of corrected words: {0}</NumberOfCorrectedWords>
     <NumberOfSkippedWords>Number of skipped words: {0}</NumberOfSkippedWords>
@@ -1354,6 +1356,7 @@ Continue?</SubtitleAppendPrompt>
     <SubtitleImportedFromMatroskaFile>Subtitle imported from Matroska file</SubtitleImportedFromMatroskaFile>
     <DropFileXNotAccepted>Drop file '{0}' not accepted - file is too large</DropFileXNotAccepted>
     <DropOnlyOneFile>You can only drop one file</DropOnlyOneFile>
+    <BeforeCreateAdjustLines>Before create/adjust lines</BeforeCreateAdjustLines>
     <OpenAnsiSubtitle>Open subtitle...</OpenAnsiSubtitle>
     <BeforeChangeCasing>Before change casing</BeforeChangeCasing>
     <CasingCompleteMessageNoNames>Number of lines with casing changed: {0}/{1}</CasingCompleteMessageNoNames>
@@ -1380,6 +1383,7 @@ Continue?</SubtitleAppendPrompt>
     <ShowSelectedLinesXSecondsLinesLater>Show selected lines {0:0.0##} seconds later</ShowSelectedLinesXSecondsLinesLater>
     <ShowSelectionAndForwardXSecondsLinesEarlier>Show selection and forward {0:0.0##} seconds earlier</ShowSelectionAndForwardXSecondsLinesEarlier>
     <ShowSelectionAndForwardXSecondsLinesLater>Show selection and forward {0:0.0##} seconds later</ShowSelectionAndForwardXSecondsLinesLater>
+    <ShowSelectedLinesEarlierLaterPerformed>Show earlier/later performed on selected lines</ShowSelectedLinesEarlierLaterPerformed>
     <DoubleWordsViaRegEx>Double words via regex {0}</DoubleWordsViaRegEx>
     <BeforeSortX>Before sort: {0}</BeforeSortX>
     <SortedByX>Sorted by: {0}</SortedByX>
@@ -1397,6 +1401,7 @@ Continue?</SubtitleAppendPrompt>
     <OcrReplacePairXNotAdded>The OCR replace list pair '{0} -&gt; {1}' was NOT added to the OCR replace list</OcrReplacePairXNotAdded>
     <XLinesSelected>{0} lines selected</XLinesSelected>
     <UnicodeMusicSymbolsAnsiWarning>Subtitle contains unicode characters. Saving using ANSI file encoding will lose these. Continue with saving?</UnicodeMusicSymbolsAnsiWarning>
+    <UnicodeCharactersAnsiWarning>Subtitle contains unicode characters. Saving using ANSI file encoding will lose these. Continue with saving?</UnicodeCharactersAnsiWarning>
     <NegativeTimeWarning>Subtitle contains negative time codes. Continue with saving?</NegativeTimeWarning>
     <BeforeMergeShortLines>Before merge short lines</BeforeMergeShortLines>
     <MergedShortLinesX>Number of lines merged: {0}</MergedShortLinesX>
@@ -1428,6 +1433,10 @@ Continue?</SubtitleAppendPrompt>
     <UserAndAction>User/action</UserAndAction>
     <NetworkMode>Networking mode</NetworkMode>
     <XStartedSessionYAtZ>{0}: Started session {1} at {2}</XStartedSessionYAtZ>
+    <SpellChekingViaWordXLineYOfX>Spell checking using Word {0} - line {1} / {2}</SpellChekingViaWordXLineYOfX>
+    <UnableToStartWord>Unable to start Microsoft Word</UnableToStartWord>
+    <SpellCheckAbortedXCorrections>Spell check aborted. {0} lines were modified.</SpellCheckAbortedXCorrections>
+    <SpellCheckCompletedXCorrections>Spell check completed. {0} lines were modified.</SpellCheckCompletedXCorrections>
     <OpenOtherSubtitle>Open other subtitle</OpenOtherSubtitle>
     <BeforeToggleDialogDashes>Before toggle of dialog dashes</BeforeToggleDialogDashes>
     <ExportPlainTextAs>Export plain text as</ExportPlainTextAs>
